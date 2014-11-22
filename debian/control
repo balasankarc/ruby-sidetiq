@@ -1,0 +1,20 @@
+Source: ruby-sidetiq
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-sidetiq.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-sidetiq.git;a=summary
+Homepage: http://github.com/tobiassvn/sidetiq
+Testsuite: autopkgtest
+XS-Ruby-Versions: all
+
+Package: ruby-sidetiq
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+# sidekiq (>= 3.0.0), celluloid (>= 0.14.1), ice_cube (= 0.11.1), rake (>= 0, development), sinatra (>= 0, development), mocha (>= 0, development), rack-test (>= 0, development), minitest (~> 5.0.7, development), coveralls (>= 0, development)
+Description: Recurring jobs for Sidekiq
+ Recurring jobs for Sidekiq
