@@ -1,0 +1,250 @@
+--- !ruby/object:Gem::Specification
+name: sidetiq
+version: !ruby/object:Gem::Version
+  version: 0.6.3
+platform: ruby
+authors:
+- Tobias Svensson
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2014-09-24 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: sidekiq
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 3.0.0
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 3.0.0
+- !ruby/object:Gem::Dependency
+  name: celluloid
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 0.14.1
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: 0.14.1
+- !ruby/object:Gem::Dependency
+  name: ice_cube
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - '='
+      - !ruby/object:Gem::Version
+        version: 0.11.1
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - '='
+      - !ruby/object:Gem::Version
+        version: 0.11.1
+- !ruby/object:Gem::Dependency
+  name: rake
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: sinatra
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: mocha
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: rack-test
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: minitest
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 5.0.7
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 5.0.7
+- !ruby/object:Gem::Dependency
+  name: coveralls
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+description: Recurring jobs for Sidekiq
+email:
+- tob@tobiassvensson.co.uk
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- ".gitignore"
+- ".travis.yml"
+- CHANGELOG.md
+- Gemfile
+- LICENSE
+- README.md
+- Rakefile
+- examples/Procfile
+- examples/config.ru
+- examples/server.rb
+- examples/workers/failing.rb
+- examples/workers/simple.rb
+- lib/sidetiq.rb
+- lib/sidetiq/actor.rb
+- lib/sidetiq/actor/clock.rb
+- lib/sidetiq/actor/handler.rb
+- lib/sidetiq/api.rb
+- lib/sidetiq/clock.rb
+- lib/sidetiq/config.rb
+- lib/sidetiq/handler.rb
+- lib/sidetiq/lock/meta_data.rb
+- lib/sidetiq/lock/redis.rb
+- lib/sidetiq/logging.rb
+- lib/sidetiq/middleware/history.rb
+- lib/sidetiq/schedulable.rb
+- lib/sidetiq/schedule.rb
+- lib/sidetiq/subclass_tracking.rb
+- lib/sidetiq/supervisor.rb
+- lib/sidetiq/version.rb
+- lib/sidetiq/views/_home_nav.erb
+- lib/sidetiq/views/_worker_nav.erb
+- lib/sidetiq/views/assets/styles.css
+- lib/sidetiq/views/history.erb
+- lib/sidetiq/views/locks.erb
+- lib/sidetiq/views/schedule.erb
+- lib/sidetiq/views/sidetiq.erb
+- lib/sidetiq/web.rb
+- sidetiq.gemspec
+- tasks/bundler.task
+- tasks/minitest.task
+- test/fixtures/backfill_worker.rb
+- test/fixtures/last_and_scheduled_ticks_worker.rb
+- test/fixtures/last_tick_worker.rb
+- test/fixtures/optional_arguments_worker.rb
+- test/fixtures/scheduled_worker.rb
+- test/fixtures/simple_worker.rb
+- test/fixtures/splat_args_worker.rb
+- test/helper.rb
+- test/test_clock.rb
+- test/test_config.rb
+- test/test_history.rb
+- test/test_lock_meta_data.rb
+- test/test_lock_redis.rb
+- test/test_schedulable.rb
+- test/test_schedule.rb
+- test/test_sidetiq.rb
+- test/test_subclass_tracking.rb
+- test/test_version.rb
+- test/test_web.rb
+- test/test_worker.rb
+homepage: http://github.com/tobiassvn/sidetiq
+licenses:
+- 3-clause BSD
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.2.2
+signing_key: 
+specification_version: 4
+summary: Recurring jobs for Sidekiq
+test_files:
+- test/fixtures/backfill_worker.rb
+- test/fixtures/last_and_scheduled_ticks_worker.rb
+- test/fixtures/last_tick_worker.rb
+- test/fixtures/optional_arguments_worker.rb
+- test/fixtures/scheduled_worker.rb
+- test/fixtures/simple_worker.rb
+- test/fixtures/splat_args_worker.rb
+- test/helper.rb
+- test/test_clock.rb
+- test/test_config.rb
+- test/test_history.rb
+- test/test_lock_meta_data.rb
+- test/test_lock_redis.rb
+- test/test_schedulable.rb
+- test/test_schedule.rb
+- test/test_sidetiq.rb
+- test/test_subclass_tracking.rb
+- test/test_version.rb
+- test/test_web.rb
+- test/test_worker.rb
