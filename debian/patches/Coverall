@@ -1,0 +1,23 @@
+Description: Commenting out coveralls
+ Commenting out the coveralls portion from test as it requires simplecov latest version
+ .
+ ruby-sidetiq (0.6.3-1) UNRELEASED; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)
+Author: Balasankar C <balasankarc@autistici.org>
+
+
+--- ruby-sidetiq-0.6.3.orig/test/helper.rb
++++ ruby-sidetiq-0.6.3/test/helper.rb
+@@ -1,7 +1,7 @@
+-if RUBY_PLATFORM != "java"
+-  require 'coveralls'
+-  Coveralls.wear!
+-end
++#if RUBY_PLATFORM != "java"
++  #require 'coveralls'
++  #Coveralls.wear!
++#end
+ 
+ require 'sidekiq'
+ require 'sidekiq/testing'

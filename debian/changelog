@@ -1,5 +1,5 @@
-ruby-sidetiq (0.6.3-1) UNRELEASED; urgency=medium
+ruby-sidetiq (0.6.3-1) unstable; urgency=medium
 
   * Initial release (Closes: #770531)
 
- -- Balasankar C <balasankarc@autistici.org>  Sat, 22 Nov 2014 20:40:27 +0530
+ -- Balasankar C <balasankarc@autistici.org>  Thu, 20 Nov 2014 18:22:27 +0530
