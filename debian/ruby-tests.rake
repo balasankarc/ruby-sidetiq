@@ -25,4 +25,3 @@ end
 task :stop_redis do
     sh 'pkill redis-server'
 end
-require 'gem2deb/rake/testtask'
