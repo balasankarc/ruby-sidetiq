@@ -1,3 +1,11 @@
+ruby-sidetiq (0.6.3-2) experimental; urgency=medium
+
+  * Debian update
+  * Move starting of redis-server to ruby-tests.rake
+  * Add redis-server to build deps
+
+ -- Balasankar C <balasankarc@autistici.org>  Sat, 17 Jan 2015 11:54:14 +0530
+
 ruby-sidetiq (0.6.3-1) unstable; urgency=medium
 
   * Initial release (Closes: #770531)

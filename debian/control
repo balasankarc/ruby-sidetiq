@@ -3,7 +3,7 @@ Section: ruby
 Priority: optional
 Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
 Uploaders: Balasankar C <balasankarc@autistici.org>
-Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-ice-cube, ruby-sinatra, ruby-sidekiq, ruby-minitest, ruby-mocha, ruby-rack, ruby-rack-test
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, ruby-ice-cube, ruby-sinatra, ruby-sidekiq, ruby-minitest, ruby-mocha, ruby-rack, ruby-rack-test, rake, redis-server
 Standards-Version: 3.9.6
 Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-sidetiq.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-sidetiq.git;a=summary
