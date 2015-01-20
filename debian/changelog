@@ -1,6 +1,5 @@
 ruby-sidetiq (0.6.3-2) unstable; urgency=medium
 
-  * Debian update
   * Move starting of redis-server to ruby-tests.rake
   * Add redis-server to build deps
 
