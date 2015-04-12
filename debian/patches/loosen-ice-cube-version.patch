@@ -1,0 +1,32 @@
+Description: allow newer versions of ice_cube
+Forwarded: yes, https://github.com/tobiassvn/sidetiq/issues/134
+
+Index: ruby-sidetiq/metadata.yml
+===================================================================
+--- ruby-sidetiq.orig/metadata.yml
++++ ruby-sidetiq/metadata.yml
+@@ -42,9 +42,9 @@ dependencies:
+   name: ice_cube
+   requirement: !ruby/object:Gem::Requirement
+     requirements:
+-    - - '='
++    - - '~>'
+       - !ruby/object:Gem::Version
+-        version: 0.11.1
++        version: '0.11'
+   type: :runtime
+   prerelease: false
+   version_requirements: !ruby/object:Gem::Requirement
+Index: ruby-sidetiq/sidetiq.gemspec
+===================================================================
+--- ruby-sidetiq.orig/sidetiq.gemspec
++++ ruby-sidetiq/sidetiq.gemspec
+@@ -21,7 +21,7 @@ Gem::Specification.new do |gem|
+ 
+   gem.add_dependency 'sidekiq',   '>= 3.0.0'
+   gem.add_dependency 'celluloid', '>= 0.14.1'
+-  gem.add_dependency 'ice_cube',  '0.11.1'
++  gem.add_dependency 'ice_cube',  '~> 0.11'
+ 
+   gem.add_development_dependency 'rake'
+   gem.add_development_dependency 'sinatra'
