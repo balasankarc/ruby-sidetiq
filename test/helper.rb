@@ -1,7 +1,7 @@
-#if RUBY_PLATFORM != "java"
-  #require 'coveralls'
-  #Coveralls.wear!
-#end
+if RUBY_PLATFORM != "java"
+  require 'coveralls'
+  Coveralls.wear!
+end
 
 require 'sidekiq'
 require 'sidekiq/testing'
