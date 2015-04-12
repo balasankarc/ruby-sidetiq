@@ -1,3 +1,10 @@
+ruby-sidetiq (0.6.3-3) unstable; urgency=medium
+
+  * Team upload.
+  * loosen dependency on ice_cube.
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 12 Apr 2015 13:43:59 +0530
+
 ruby-sidetiq (0.6.3-2) unstable; urgency=medium
 
   * Move starting of redis-server to ruby-tests.rake
