@@ -14,7 +14,8 @@ XS-Ruby-Versions: all
 Package: ruby-sidetiq
 Architecture: all
 XB-Ruby-Versions: ${ruby:Versions}
-Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter, ruby-ice-cube, ruby-celluloid, ruby-sidekiq
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter,
+ ruby-ice-cube, ruby-celluloid (>= 0.16), ruby-sidekiq (>= 3.0)
 Description: recurring jobs for Sidekiq
  Sidetiq provides a simple API for defining recurring workers for Sidekiq. It
  has the following features - Concurrency and fault-tolerance using Celluloid 
