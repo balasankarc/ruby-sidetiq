@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 7.0.50~),
  ruby-ice-cube,
  ruby-sinatra,
  ruby-sidekiq (>= 3.0),
- ruby-celluloid (>= 0.16)
+ ruby-celluloid (>= 0.16),
  ruby-minitest,
  ruby-mocha,
  ruby-rack,
