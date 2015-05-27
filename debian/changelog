@@ -1,7 +1,7 @@
 ruby-sidetiq (0.6.3-4) UNRELEASED; urgency=medium
 
   * Team upload
-  * Tighten dependency on ruby-celluloid and ruby-sidekiq
+  * Tighten dependency on ruby-celluloid and ruby-sidekiq (Closes: #785182)
 
  -- Pirate Praveen <praveen@debian.org>  Tue, 12 May 2015 11:32:45 +0530
 
